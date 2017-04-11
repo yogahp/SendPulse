@@ -61,6 +61,9 @@ module SendPulse
           when 'PUT'
             request = Net::HTTP::Put.new(uri.request_uri, token)
             request.set_form_data(data)
+          when 'DELETE'
+            request = Net::HTTP::Delete.new(uri.request_uri, token)
+            request.set_form_data(data)
           else
             request = Net::HTTP::Get.new(uri.request_uri, token)
         end

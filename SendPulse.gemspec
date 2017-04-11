@@ -22,6 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.2'
   spec.add_development_dependency 'dotenv', '~> 2.1.1'
-  spec.add_development_dependency 'simplecov', '~> 0.14.1'
   spec.add_development_dependency 'faker', '~> 1.7.3'
 end
