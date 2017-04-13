@@ -9,41 +9,8 @@ Ruby client for [SendPulse](https://sendpulse.com/)
 ### Email Service
 1. [Mailing lists](https://github.com/yogahp/SendPulse/wiki/Mailing-lists)
 
-### SMTP
-#### Send Email
-
-```ruby
-require 'sendpulse/smtp'
-
-email = {
-  html: '<html><body><h1>HTML</h1></body></html>',
-  text: 'Text',
-  subject: 'Subject',
-  from: {
-    name: 'Sender Name',
-    email: 'sender@example.com'
-  },
-  to: [
-    {
-      name: 'Receiver Name',
-      email: 'receiver@example.com'
-    }
-  ]
-}
-
-sendpulse_smtp = SendPulse::Smtp.new(your_client_id, your_client_secret, 'https', nil)
-sendpulse_smtp.send_email(email)
-```
-
-#### Retrieve Emails 
-
-```ruby
-require 'sendpulse/smtp'
-
-sendpulse_smtp = SendPulse::Smtp.new(your_client_id, your_client_secret, 'https', nil)
-sendpulse_smtp.retrieve_emails
-```
-
+### SMTP Service
+[SMTP Service](https://github.com/yogahp/SendPulse/wiki/SMTP)
 
 [Here](https://sendpulse.com/integrations/api) is SendPulse API specification.
 
