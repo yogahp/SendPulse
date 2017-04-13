@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'faker'
 
-describe SendPulse::MailingList do
+describe SendPulse::EmailService::MailingList do
   before(:each) do
     @client_id = ENV['CLIENT_ID']
     @client_secret = ENV['CLIENT_SECRET']

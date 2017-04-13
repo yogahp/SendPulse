@@ -5,4 +5,4 @@ Dotenv.load
 
 require 'sendpulse/api'
 require 'sendpulse/smtp'
-require 'sendpulse/mailing_list'
+require 'sendpulse/email_service/mailing_list'
