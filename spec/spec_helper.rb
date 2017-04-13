@@ -4,5 +4,5 @@ require 'json'
 Dotenv.load
 
 require 'sendpulse/api'
-require 'sendpulse/smtp'
+require 'sendpulse/smtp_service'
 require 'sendpulse/email_service/mailing_list'

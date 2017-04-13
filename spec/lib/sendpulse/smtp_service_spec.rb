@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'faker'
 
-describe SendPulse::Smtp do
+describe SendPulse::SmtpService do
   before(:each) do
     @client_id = ENV['CLIENT_ID']
     @client_secret = ENV['CLIENT_SECRET']
@@ -29,7 +29,7 @@ describe SendPulse::Smtp do
       let(:retrieve_emails) { sendpulse_smtp.retrieve_emails }
 
       it do 
-        expect(sendpulse_smtp).to be_a SendPulse::Smtp
+        expect(sendpulse_smtp).to be_a SendPulse::SmtpService
         expect(send_email[:data]).to eql({ "result" => true })
         expect(retrieve_emails[:data][0]).to include("id")
         expect(retrieve_emails[:data][0]).to include("sender")
