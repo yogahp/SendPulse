@@ -6,6 +6,9 @@ Ruby client for [SendPulse](https://sendpulse.com/)
 
 ## Usage
 
+### Email Service
+1. [Mailing lists](https://github.com/yogahp/SendPulse/wiki/Mailing-lists)
+
 ### SMTP
 #### Send Email
 
@@ -41,116 +44,6 @@ sendpulse_smtp = SendPulse::Smtp.new(your_client_id, your_client_secret, 'https'
 sendpulse_smtp.retrieve_emails
 ```
 
-### Mailing List
-#### Creating a mailing list
-
-```ruby
-require 'sendpulse/mailing_list'
-
-sendpulse_mailinglist = SendPulse::MailingList.new(your_client_id, your_client_secret, 'https', nil)
-sendpulse_mailinglist.create("Mailing List Title")
-```
-
-#### Editing a mailing list
-
-```ruby
-require 'sendpulse/mailing_list'
-
-sendpulse_mailinglist = SendPulse::MailingList.new(your_client_id, your_client_secret, 'https', nil)
-sendpulse_mailinglist.update({ id: id, name: "New mailing list name" })
-```
-
-#### Retrieving a list of mailing list
-
-```ruby
-require 'sendpulse/mailing_list'
-
-sendpulse_mailinglist = SendPulse::MailingList.new(your_client_id, your_client_secret, 'https', nil)
-sendpulse_mailinglist.list({ limit: 10, offset: 10 })
-```
-
-#### Retrieving mailing list information
-
-```ruby
-require 'sendpulse/mailing_list'
-
-sendpulse_mailinglist = SendPulse::MailingList.new(your_client_id, your_client_secret, 'https', nil)
-sendpulse_mailinglist.get(mailinglist_id)
-```
-
-#### Retrieving a list of emails from a mailing list
-
-```ruby
-require 'sendpulse/mailing_list'
-
-sendpulse_mailinglist = SendPulse::MailingList.new(your_client_id, your_client_secret, 'https', nil)
-sendpulse_mailinglist.get_emails(mailinglist_id)
-```
-
-#### Adding emails to a mailing list
-
-```ruby
-require 'sendpulse/mailing_list'
-
-sendpulse_mailinglist = SendPulse::MailingList.new(your_client_id, your_client_secret, 'https', nil)
-sendpulse_mailinglist.add_emails(
-  {
-    id: id,
-    emails: [
-      {
-        "email": "test1@gmail.com",
-        "variables": {
-          "variable1": "value1",
-          "variable2": "value2"
-        }
-      },
-      {
-        "email": "test1@gmail.com",
-        "variables": {
-          "variable1": "value1",
-          "variable2": "value2"
-        }
-      }
-    ]
-  }
-)
-```
-
-#### Deleting emails from a mailing list
-
-```ruby
-require 'sendpulse/mailing_list'
-
-sendpulse_mailinglist = SendPulse::MailingList.new(your_client_id, your_client_secret, 'https', nil)
-sendpulse_mailinglist.delete_emails({ id: id, emails: ["test1@gmail.com"] })
-```
-
-#### Retrieving information for specific email address from a mailing list
-
-```ruby
-require 'sendpulse/mailing_list'
-
-sendpulse_mailinglist = SendPulse::MailingList.new(your_client_id, your_client_secret, 'https', nil)
-sendpulse_mailinglist.get_email({ id: id, email: "test1@gmail.com" })
-```
-
-#### Erasing a mailing list
-
-```ruby
-require 'sendpulse/mailing_list'
-
-sendpulse_mailinglist = SendPulse::MailingList.new(your_client_id, your_client_secret, 'https', nil)
-sendpulse_mailinglist.delete(id)
-```
-
-#### Calculating the cost of a campaign carried out by a mailing list
-
-```ruby
-require 'sendpulse/mailing_list'
-
-sendpulse_mailinglist = SendPulse::MailingList.new(your_client_id, your_client_secret, 'https', nil)
-sendpulse_mailinglist.cost(id)
-```
 
 [Here](https://sendpulse.com/integrations/api) is SendPulse API specification.
 
