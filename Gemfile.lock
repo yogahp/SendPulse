@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sendpulse (0.0.4)
+    sendpulse (0.0.5)
 
 GEM
   remote: https://rubygems.org/
@@ -35,9 +35,9 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.7)
-  dotenv (~> 2.1.1)
-  faker (~> 1.7.3)
-  nokogiri (~> 1.7.2)
+  dotenv (~> 2.1)
+  faker (~> 1.7)
+  nokogiri (~> 1.7)
   rake (~> 10.0)
   rspec (~> 3.2)
   sendpulse!

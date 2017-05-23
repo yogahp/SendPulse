@@ -21,8 +21,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.2'
-  spec.add_development_dependency 'dotenv', '~> 2.1.1'
-  spec.add_development_dependency 'faker', '~> 1.7.3'
+  spec.add_development_dependency 'dotenv', '~> 2.1'
+  spec.add_development_dependency 'faker', '~> 1.7'
   spec.add_development_dependency 'tempmailru', '~> 0.0.1'
-  spec.add_development_dependency 'nokogiri', '~> 1.7.2'
+  spec.add_development_dependency 'nokogiri', '~> 1.7'
 end
