@@ -8,6 +8,7 @@ Ruby client for [SendPulse](https://sendpulse.com/)
 
 ### Email Service
 1. [Mailing lists](https://github.com/yogahp/SendPulse/wiki/Mailing-lists)
+2. [Sender](https://github.com/yogahp/SendPulse/wiki/Sender)
 
 ### SMTP Service
 [SMTP Service](https://github.com/yogahp/SendPulse/wiki/SMTP)
