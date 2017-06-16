@@ -34,7 +34,7 @@ describe SendPulse::EmailService::Sender do
         }
         expected_result = {:data=>{"result"=>true}, :http_code=>"200"}
         expect(@sendpulse_sender.create(params)).to eql(expected_result)
-        expected_result = {:data=>{"result"=>true, "email"=>"test@binka.me"}, :http_code=>"200"}
+        expected_result = {:data=>{"result"=>true, "email"=>"test@p33.org"}, :http_code=>"200"}
         expect(@sendpulse_sender.get_activate_code(email)).to eql(expected_result)
         sleep 1
         tempmailru_api.email = email
@@ -45,7 +45,7 @@ describe SendPulse::EmailService::Sender do
           email: email,
           code: code
         }
-        expected_result = {:data=>{"result"=>true, "email"=>"test@binka.me"}, :http_code=>"200"}
+        expected_result = {:data=>{"result"=>true, "email"=>"test@p33.org"}, :http_code=>"200"}
         expect(@sendpulse_sender.activate(params)).to eql(expected_result)
         list = @sendpulse_sender.list
         expect(list[:data].select { |d| d["email"] == email }[0]["status"]).to eql "Active"
