@@ -42,6 +42,10 @@ module SendPulse
       def cost(id)
         send_request("addressbooks/#{id}/cost", 'GET')
       end
+      
+      def change_variable(params)
+        send_request("addressbooks/#{params[:id]}/emails/variable", 'POST', params)
+      end
     end
   end
 end
