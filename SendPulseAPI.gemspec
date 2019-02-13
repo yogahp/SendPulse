@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sendpulse/version'
+require 'sendpulseapi/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'sendpulse'
-  spec.version       = SendPulse::VERSION
-  spec.authors       = ['Yoga Hapriana']
-  spec.email         = ['thenelse@rocketmail.com']
+  spec.name          = 'sendpulse_api'
+  spec.version       = SendPulseAPI::VERSION
+  spec.authors       = ['Tyler Link']
+  spec.email         = ['linktylr@gmail.com']
   spec.summary       = %q{Client to http://sendpulse.com/ API.}
   spec.description   = %q{Ruby client to http://sendpulse.com/ API}
-  spec.homepage      = 'https://github.com/yogahp/SendPulse'
+  spec.homepage      = 'https://github.com/linktylr/SendPulse'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
