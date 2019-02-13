@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sendpulse (0.0.5)
+    sendpulseapi (0.0.5)
 
 GEM
   remote: https://rubygems.org/
@@ -40,7 +40,7 @@ DEPENDENCIES
   nokogiri (~> 1.7)
   rake (~> 10.0)
   rspec (~> 3.2)
-  sendpulse!
+  sendpulseapi!
   tempmailru (~> 0.0.1)
 
 BUNDLED WITH

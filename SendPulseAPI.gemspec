@@ -5,9 +5,9 @@ require 'sendpulse/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'sendpulse_api'
-  spec.version       = SendPulse::VERSION
-  spec.authors       = ['Yoga Hapriana']
-  spec.email         = ['thenelse@rocketmail.com']
+  spec.version       = SendPulseAPI::VERSION
+  spec.authors       = ['Tyler Link']
+  spec.email         = ['linktylr@gmail.com']
   spec.summary       = %q{Client to http://sendpulse.com/ API.}
   spec.description   = %q{Ruby client to http://sendpulse.com/ API}
   spec.homepage      = 'https://github.com/linktylr/SendPulse'

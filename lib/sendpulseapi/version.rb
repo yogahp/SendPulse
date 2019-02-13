@@ -1,3 +1,3 @@
-module SendPulse
+module SendPulseAPI
   VERSION = '0.0.5'
 end

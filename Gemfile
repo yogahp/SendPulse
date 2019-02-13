@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in SendPulse.gemspec
+# Specify your gem's dependencies in SendPulseAPI.gemspec
 gemspec
